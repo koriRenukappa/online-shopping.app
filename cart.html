@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - RKStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">  <!--this link is font awsome 4cdn to add ratings icons-->
+</head>
+<body>
+
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logo-img" width="78px" height="69px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Account</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+        <!-- <img src="images/cart.jpg" alt="cart-icon" style="width: 32px;height: 32px;"> -->
+        <span class="material-symbols-outlined">
+            shopping_cart
+        </span>
+        <span class="material-symbols-outlined" id="menu-icon" onclick="menutoggle()">
+            menu
+            </span>
+    </div>
+</div>
+
+<!-------cart items details--------->
+<div class="small-container cart-page" >
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-informn">
+                    <img src="images/product-7.jpeg" alt="img">
+                    <div>
+                        <p>Men Solid Round Neck Polyester Black T-Shirt</p>
+                        <small>&#8377;829</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#8377;829</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-informn">
+                    <img src="images/product-1.jpeg" alt="img">
+                    <div>
+                        <p>Women Printed Viscose Rayon Straight Kurta(Black)</p>
+                        <small>&#8377;399</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#8377;399</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-informn">
+                    <img src="images/product6.jpg" alt="img">
+                    <div>
+                        <p>Sneaker Casual Shoes For Men (White , 6)</p>
+                        <small>&#8377;924</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#8377;924</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-informn">
+                    <img src="images/allprod10.jpeg" alt="img">
+                    <div>
+                        <p>boAt Rockerz 255 Z Plus, 50HRS Playback(Classic Black, In the Ear)</p>
+                        <small>&#8377;1050</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#8377;1050</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+          <table>
+            <tr>
+                <td>Amount</td>
+                <td>&#8377;3202</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>&#8377;200</td>
+            </tr>
+            <tr>
+                <td>TotalAmount</td>
+                <td>&#8377;3402</td>
+            </tr>
+          </table>
+    </div>
+
+</div>
+
+<!-----footer----->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/google-play-app.png" alt="play-store-img">
+                    <img src="images/app-store.jpeg" alt="app-store-img">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/footer-logo.jpeg" alt="img" width="100px" height="80px" style="border-radius: 50%;">
+                <p>Our Purpose is to keep customer happy and we try to give our best 
+                    shopping feel for our lovely customer's
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+               <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+               <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Youtube</li>
+               </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copy-right">&copy;2024 RKStore.com</p>
+    </div>
+</div>
+
+<!-------JS for toggle menu-------->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+
+</body>
+</html>

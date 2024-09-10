@@ -1,0 +1,669 @@
+*{
+    margin: 0;                        /*these things are applicable for all html elements*/
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 22px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.column-2{
+    flex-basis: 50%;
+    min-width: 350px;
+}
+.column-2 img{
+    max-width: 100%;
+    padding: 45px 50px;
+}
+.column-2 h1{
+    font-size: 40px;
+    margin: 22px 0;
+    line-height: 55px;
+}
+.btn{
+    display: inline-block;
+    background-color: rgb(243, 135, 243);
+    color: black;
+    padding: 10px 30px;
+    border-radius: 35px;
+    margin: 30px 0;
+    font-weight: bold;
+    transition: background-color 0.7s;
+}
+.btn:hover{
+    border: 1px solid rgb(253, 252, 252);
+    background-color: rgb(10, 10, 10);
+    color: whitesmoke;
+}
+.header{
+    background: radial-gradient(#b6aaaa,rgb(234, 232, 235));
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.header .row{
+    margin-top: 40px;
+}
+
+.types{
+    margin: 45px 0;
+}
+.column3{
+    flex-basis: 25%;
+    min-height: 250px;
+    margin-bottom: 25px;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.column-4{
+    flex-basis: 25%;     /*we need to create four column for we have to fix 25%*/
+    min-height: 200px;
+    padding: 10px;
+    margin-bottom: 40px;
+    transition: transform 0.6s;
+}
+.column-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 75px;
+    position: relative;
+    line-height: 60px;
+}
+.title::after{
+    content: "";
+    background: #662b2b;
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+}
+h4{
+    font-weight: normal;
+    color: #0f1614;
+}
+.column-4 p{
+    font-size: 15px;
+}
+.ratings .fa{
+    color: #a7360a;           /*.fa-for rating color*/
+}
+.column-4:hover{
+    transform: translateY(-5px)
+}
+
+/*-----offer-----*/
+
+.offer{
+    background: radial-gradient(#9c8181,rgb(123, 106, 134));
+    margin-top: 60px;
+    padding: 30px 0;
+}
+.column-2 .offer-img{
+    padding: 40px;
+}
+.another-btn{
+    display: inline-block;
+    background-color: rgb(10, 10, 10);
+    color: rgb(235, 231, 231);
+    padding: 10px 30px;
+    border-radius: 35px;
+    margin: 30px 0;
+    font-weight: normal;
+    transition: background-color 0.7s;
+}
+.another-btn:focus{
+    border: 1px solid rgb(253, 252, 252);
+    background: #746767;
+}
+
+/*------testimonial------*/
+
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .column3{
+    padding: 30px 15px;
+    text-align: center;
+    box-shadow: 0 0 25px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .column3 img{
+    margin-top: 15px;
+    border-radius: 100px;
+}
+.testimonial .column3:hover{
+    transform: translateY(-12px);
+}
+.column3 p{
+    font-size: 15px;
+    margin: 12px 0;
+    text-align: justify;
+}
+.fa.fa-quote-left{
+    font-size: 30px;
+    color: #464434;
+}
+.testimonial .column3 h3{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/*----brans----*/
+.brands{
+    margin: 100px auto;
+}
+.column-5{
+    width: 150px;
+}
+.column-5 img{
+    width: 100px;  
+}
+
+
+
+/*------footer--------*/
+
+.footer{
+    background-color: #160f0f;
+    color: rgb(197, 220, 238);
+    padding: 50px 0 20px;
+    font-size: 15px;
+}
+.footer p{
+    color: #9b9b9b;
+}
+.footer h3{
+    margin-bottom: 8px;
+    color: #dcdddd;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 15px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+   flex: 1;     /*it will use all available space*/
+   text-align: center;
+}
+.footer-col-2 img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+.footer-col-3 a{
+    color:  rgb(197, 220, 238);
+}
+.footer-col-4 a{
+    color:  rgb(197, 220, 238);
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 12px;
+}
+.app-logo img{
+    border-radius: 10px;
+    width:150px;
+    /* cursor: pointer; */
+}
+.footer hr{
+    background: #a8a3a3;
+    border: none;
+    height: 1px;
+    margin: 16px 0;
+}
+.copy-right{
+    text-align: center;
+}
+#menu-icon{
+  margin-left: 20px;       /*here we used menu for small screen and we hide this menu in big screen*/
+  display: none;
+  cursor: pointer;
+}
+
+/*---------media query for menu------------*/
+
+@media only screen and (max-width:700px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #2b2222;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    #menu-icon{
+        display: block;
+    }
+}
+
+
+/*-------------All Products------------------*/
+
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #6c9ea1;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+
+.page-btn{
+    margin: 0 auto 50px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #352b2b;
+    margin-left: 10px;
+    padding: 9px;
+    /* width: 30px;
+    height: 30px; */
+    line-height: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background-color: #1b1919;
+    color: #fff;
+}
+
+/*--------single product details-----------*/
+
+/* .single-product{
+    margin-top: 70px;
+}
+.single-product .column-2 img{
+    padding: 0;
+}
+.single-product .column-2{
+    padding: 15px;
+}
+.single-product h4{
+         margin: 20px 0;
+         font-weight: bold;
+         font-size: 20px;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 18px;
+}
+.single-product input{
+    width: 50px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+input:focus{
+    outline: none;
+}
+.single-product .fa{
+    color: #3854f3;
+    margin-left: 10px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+} */
+
+/*-----------cart items details---------------*/
+
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-informn{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    background: #464434;
+    color: #fff;
+    padding: 6px;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #2834d6;
+    font-size: 15px;
+}
+td img{
+    width: 90px;
+    height: 90px;
+    margin-right: 15px;
+}
+.total-price{
+     display: flex;
+     justify-content: flex-end;
+}
+.total-price table{
+    border-top: 2px solid #0f1614;
+    width: 100%;
+    max-width: 200px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+.cart-informn p{
+    display: none;        /*it is applicable for only small scree.This will hide products name in small screen devices*/
+}
+
+
+/*-------------account-page---------------*/
+
+.account-page{
+    padding: 90px 0;
+    background: radial-gradient(#a7a2a2,rgb(244, 236, 248));
+}
+.account-page .column-2 img{
+    border-radius: 60px;
+    opacity: 0.9;
+}
+.form-container{
+    width: 320px;
+    height: 400px;
+    background: #fff;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    overflow: hidden;        /*this hidden for click event*/
+}
+.form-container span{
+    display: inline-block;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #0f0e0e;
+    width: 100px;
+    cursor: pointer;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 310px;
+    padding: 0 20px;
+    position: absolute;
+    top: 120px;
+    transition: transform 1s;
+
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #bcbdbc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+form .btn:hover{
+    border: none;
+}
+#loginform{
+    left: -300px;
+}
+#registerform{
+    left: 0;
+}
+form a{
+    font-size: 14px;
+}
+#indicator{
+    width: 100px;
+    border: none;
+    background: #a7360a;
+    height: 3px;
+    margin-top: 7px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+
+
+/*---------contact details----------*/
+
+.contact-details{
+    width: 30%;
+    height: 340px;
+    margin: 80px auto 80px;
+    background: rgb(173, 229, 231);
+    /* text-align: center; */
+    border-radius: 20px;
+}
+.cont-content{
+   padding: 30px;
+   text-align: center;
+}
+.cont-content h2{
+    line-height: 50px;
+}
+.cont-content p{
+  margin-top: 5px;
+}
+.cont-content a{
+    display: block;
+    padding: 8px 0;
+}
+.cont-content .line{
+    width: 80px;
+    margin: -8px auto 8px;
+    background-color: rgb(248, 147, 79);
+    height: 5px;
+    border-radius: 20px;
+}
+.cont-content .email-img{
+    width: 26px;
+    border-radius: 20px;
+    margin-right: 5px;
+    display: block;
+    position: absolute;
+    left: 42%;
+}
+.cont-content .email{
+    display: inline-block;
+    position: absolute;
+    right: 54%;
+    margin-right: 37px;
+}
+.cont-content .phone{
+    display: inline-block;
+    position: absolute;
+    right: 54%;
+    margin-right: 7px;
+}
+.cont-content .location{
+    display: inline-block;
+    position: absolute;
+    right: 57%;
+    margin-right: 38px;
+}
+.follow{
+    display: block;
+}
+.follow h3{
+    text-align: center;
+    font-weight: 600;
+    margin-top: -5px;
+}
+.follow-images{
+    display: block;
+    margin-left: 145px;
+}
+.follow img{
+    width: 23px;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.follow-images img{
+    opacity: .9;
+}
+.follow-images img:hover{
+    opacity: 1;
+}
+
+/*--------------about-------------------*/
+.about{
+    width: 90%;
+    margin: auto;
+}
+.paragraph {
+    padding: 50px 80px 50px;
+    text-align: justify;
+    text-indent: 55px;
+}
+.video{
+    width: 37%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+/*------media query for less than 700 screen size-------*/
+
+@media only screen and (max-width:700px){
+    .row{
+        text-align: center;
+    }
+    .column-2, .column3, .column-4{
+         flex-basis: 100%;
+    }
+    .about{
+        width: 100%;
+        display: block;
+        overflow-x: hidden;
+    }
+    .paragraph {
+        padding: 30px;
+    }
+    .video{
+        width: 100%;
+        margin-left: 100px;
+    }
+    .media{
+        width: 200px;
+        height: auto;
+    }
+    .contact-details{
+       width: 80%;
+       height: 390px;
+    }
+    .cont-content .email{
+       display: inline-block;
+       position: absolute;
+       right: 75%;
+       margin-right: 7px;
+    }
+    .cont-content .phone{
+        display: inline-block;
+        position: absolute;
+        right: 65%;
+        margin-right: 7px;
+    }
+    .cont-content .location{
+        display: inline-block;
+        position: absolute;
+        right: 66%;
+        margin-right: 48px;
+    }
+    .follow{
+        display: inline-block;
+        width: 100%;
+    }
+   .follow-images img{
+        display:inline-block;
+        position: relative;
+        margin: auto;
+        top: 9px;
+        right: 45px;
+    }
+}
